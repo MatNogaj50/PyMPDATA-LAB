@@ -4,5 +4,5 @@ jobs:
   main:
     runs-on: ubuntu-latest
     steps:
-      - run: python-c "print('hello world!')"
+      - run: python -c "print('hello world!')"
       # - uses:
