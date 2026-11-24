@@ -11,3 +11,7 @@ jobs:
           tinytex: true
       - run: pip install nbformat nbclient ipykernel
       - run: quarto render example.ipynb --execute --to pdf
+      - uses: actions/upload-artifact@v7
+        with:
+          path: example.pdf
+          archive: false
