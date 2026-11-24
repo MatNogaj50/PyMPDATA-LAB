@@ -7,4 +7,5 @@ jobs:
       - run: python -c "print('hello world!')"
       - uses: actions/checkout@v7
       - uses: quarto-dev/quarto-actions/setup@v2
+      - run: pip install nbformat
       - run: quarto render example.ipynb --execute --to pdf
